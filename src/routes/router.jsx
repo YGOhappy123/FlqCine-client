@@ -7,6 +7,7 @@ import AuthProtector from '../components/layout/AuthProtector'
 import MyReviewsPage from '../pages/MyReviewsPage'
 import MyFavoritesPage from '../pages/MyFavoritesPage'
 import UpdatePasswordPage from '../pages/UpdatePasswordPage'
+import NotFoundPage from '../pages/NotFoundPage'
 
 const routes = [
     {
@@ -52,6 +53,10 @@ const routes = [
     {
         path: '/:mediaType/:mediaId',
         element: <MediaDetailPage />
+    },
+    {
+        path: '*',
+        element: <NotFoundPage />
     }
 ]
 
